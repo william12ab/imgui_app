@@ -182,6 +182,7 @@ void SceneApp::UpdateImGuiIO()
 	ImGuiIO& io = ImGui::GetIO();
 	io.MouseDown[0] = input_manager_->touch_manager()->is_button_down(0);
 	io.MouseDown[1] = input_manager_->touch_manager()->is_button_down(1);
+	io.MouseWheel += input_manager_->touch_manager()->mouse_rel().z() / WHEEL_DELTA;
 
 	gef::KeyboardD3D11* keyboard_d3d11 = (gef::KeyboardD3D11*)input_manager_->keyboard();
 
