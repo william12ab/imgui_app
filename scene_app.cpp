@@ -12,8 +12,10 @@
 #include "load_texture.h"
 
 #include "imgui.h"
-#include "examples/imgui_impl_dx11.h"
-#include "examples/imgui_impl_win32.h"
+//#include "examples/imgui_impl_dx11.h"
+#include "backends/imgui_impl_dx11.h"
+//#include "examples/imgui_impl_win32.h"
+#include "backends/imgui_impl_win32.h"
 #include <platform/d3d11/system/platform_d3d11.h>
 #include <platform/d3d11/input/keyboard_d3d11.h>
 
